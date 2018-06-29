@@ -1,5 +1,7 @@
 ﻿body {
     background-color: rgb(235, 255, 166);
+    margin:0px;
+    margin-top:10px;
 }
 .container {
     display: grid;
@@ -10,6 +12,9 @@
     min-width:600px;
 }
 
+
+
+/*Nav Bar*/
 .me {
     grid-column: 1/span 8;
     grid-row: 2;
@@ -52,4 +57,37 @@
         .nav ul li:hover{
             color:rgb(235, 255, 166);
             background-color:rgb(18, 21, 31)
+        }
+
+        /*About Me*/
+        .about{
+            background-color:rgb(1, 4, 16);
+            color:rgb(210, 227, 255);
+            grid-column:span 12;
+            grid-row:5/span 9;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .about p{
+            font-size:50px;
+        }
+        .subtext{
+            font-size:20px!important;
+            margin-bottom:50px;
+        }
+        .about p,h2{
+            margin-right:10%;
+            margin-left:10%;
+        }
+        h2{
+            color:rgb(140, 179, 245);
+        }
+        .about p a{
+            text-decoration:none;
+            color:rgb(235, 255, 166);
+        }
+        .about p a:hover{
+            color:rgb(228, 255, 135);
         }
