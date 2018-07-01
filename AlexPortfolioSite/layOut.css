@@ -1,4 +1,48 @@
-﻿body {
+﻿@media screen and (max-width:613px){
+    p{
+        margin:0px;
+    }
+    h2{
+        margin:0px;
+
+    }
+    .big{
+        font-size:30px!important;
+    }
+}
+@media screen and (max-width:1015px)
+{
+    p {
+        margin:15px;
+    }
+
+    h2 {
+        margin: 15px;
+    }
+}
+@media screen and (max-width:837px){
+    p {
+        margin: 0px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+    .big{
+        font-size:40px!important;
+    }
+    .skill{
+        font-size:15px;
+        font-weight:500;
+    }
+    .tech{
+        margin-left:5%!important;
+        margin-right:5%!important;
+    }
+}
+
+
+body {
     background-color: rgb(235, 255, 166);
     margin:0px;
     margin-top:10px;
@@ -6,10 +50,10 @@
 .container {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(50,50px);
+    grid-template-rows: repeat(70,50px);
     width: 100%;
     font-family: 'Open Sans Condensed', sans-serif;
-    min-width:600px;
+    min-width:613px;
 }
 
 
@@ -123,3 +167,122 @@
         .bubble i{
             margin-top:10px;
         }
+
+        /*technical inventory*/
+        .tech{
+            grid-column:span 12;
+            grid-row:14/span 9;
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content:space-around;
+            margin-left:10%;
+            margin-right:10%;
+            align-items:center;
+        }
+            .tech h2 {
+                width: 100%;
+                color:rgb(1, 4, 16);
+            }
+        .skill{
+            width:16%;
+            height:50px;
+            flex-basis:16%;
+            background-color:rgb(1, 4, 16);
+            color:rgb(210, 227, 255);
+            border-radius:5%;
+            text-align:center;
+            align-content:center;
+            padding-top:1%;
+            padding-bottom:1%;
+        }
+        /*Projects*/
+.tuscany {
+    grid-column: span 6;
+    grid-row: 24/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(1, 4, 16);
+    background-image: url('tuscany villa.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+.villa {
+    width: 100%;
+    height:100%;
+    text-decoration: none;
+    color: rgb(210, 227, 255);
+    font-size:50px;
+    background-color:rgba(1, 4, 16,0.5);
+}
+    .villa div {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+.tuscany-villa {
+    grid-column: span 6;
+    grid-row: 24/span 9;
+    background-color:rgb(0, 4, 16);
+}
+.tuscany-villa p,h1{
+    margin-left:10%;
+    margin-right:10%;
+    color:rgb(210, 227, 255);
+    font-size:25px;
+}
+
+.shelter {
+    grid-column:7/ span 6;
+    grid-row: 33/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 21, 31);
+    background-image: url('shelter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.vpshelter {
+    grid-column: span 6;
+    grid-row: 33/span 9;
+    background-color: rgb(9, 12, 23);
+}
+
+    .vpshelter p, h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(210, 227, 255);
+        font-size: 25px;
+    }
+
+
+.lucky {
+    grid-column: span 6;
+    grid-row: 42/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 35, 52);
+    background-image: url('luckynum.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.luckynumber {
+    grid-column: span 6;
+    grid-row: 42/span 9;
+    background-color: rgb(15, 19, 34);
+}
+
+    .luckynumber p, h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(210, 227, 255);
+        font-size: 25px;
+    }
+
+    /*contact me*/
