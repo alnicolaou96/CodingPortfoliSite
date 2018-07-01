@@ -91,3 +91,35 @@
         .about p a:hover{
             color:rgb(228, 255, 135);
         }
+
+        /*Linkedin and github*/
+.bottom {
+    color: rgba(210, 227, 255,0.75);
+    font-size: 25px;
+    grid-column: span 12;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+.bottom a {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(140, 179, 245,0.75);
+    color:rgba(18, 21, 31,0.75);
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom:1%;
+}
+.bottom a:hover{
+    color:rgb(228, 255, 135);
+    background-color:rgb(140, 179, 245);
+}
+.bottom a:active{
+    color:rgb(1, 4, 16);
+    background-color:rgb(228, 255, 135);
+}
+        .bubble i{
+            margin-top:10px;
+        }
